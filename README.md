@@ -3,7 +3,9 @@
 ## Linear Regression to Predict MPG
 
 A linear regression analysis of the miles per gallon of different mechacar prototypes was completed. The variables tracked were vehicle length, weight, the spoiler angle, ground clearance, all-wheel drive. Here is the result summary of the linear regression model:
-https://public.tableau.com/app/profile/aaron.hall4277/viz/NYC_Citibike_Challenge_16439586683850/NYCCitiBikeBreakdown
+<img src = "https://github.com/AaronAKTX/MechaCar_Statistical_Analysis/blob/main/resources/MechaCar_MPG_Summary.PNG">
+
+Looking at these results, vehicle length and ground clearance appear to affect the miles per gallon to a statistically significant degree.
 
 ### Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
 - vehicle length
@@ -13,11 +15,18 @@ The slope of the linear model is not considered to be zero. A zero would indicat
 ### Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
 I think it does a pretty good job of predicting mpg of MechaCar prototypes. The R-squared value is .7149 which means that around 70% of the variation in miles per gallon between different prototypes can be explained by or predicted by the model.
 
+## Summary Statistics on Suspension Coils
+
+###The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not
+Here are pictures of the total summary and lot summary dataframes:
+
+
+
 ### A Tableau Story of the significant data points can be found here [Link to Story](https://public.tableau.com/app/profile/aaron.hall4277/viz/NYC_Citibike_Challenge_16439586683850/NYCCitiBikeBreakdown)
 
 ### Results of Analysis:
 - Time per ride:
-<img src = "https://github.com/AaronAKTX/bikesharing/blob/main/resources/bike_trip_breakdown.PNG">
+<img src = "https://github.com/AaronAKTX/MechaCar_Statistical_Analysis/blob/main/resources/MechaCar_MPG_Summary.PNG">
 
 This shows that vast majority of the rides taken are than one hour.  People are usually just going for a quick ride to get from point A to point B.
 
