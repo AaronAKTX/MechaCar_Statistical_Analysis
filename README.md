@@ -37,13 +37,25 @@ Here are pictures of the total summary and lot summary dataframes:<br />
 <img src = "https://github.com/AaronAKTX/MechaCar_Statistical_Analysis/blob/main/resources/total_summary.PNG"><br />
 <img src = "https://github.com/AaronAKTX/MechaCar_Statistical_Analysis/blob/main/resources/lot_summary.PNG"><br />
 
-From the dataframes above it's easy to see that the total variance in psi across all lots  is less than 63 pounds per square inch. Therefore, the desing specification is met for all lots. However, looking at the individual lots, Lot 3 has a variance of over 170 pounds per square inch. This specific lot does not meet the design specifications.
+From the dataframes above it's easy to see that the total variance in psi across all lots  is less than 63 pounds per square inch. Therefore, the design specification is met for all lots. However, looking at the individual lots, Lot 3 has a variance of over 170 pounds per square inch. This specific lot does not meet the design specifications.
 
 ## T-Tests on Suspension Coils
 
 Comparing the population mean against the mean of the sample we have yields the following results.
 The mean of the psi in the three lots we have in our sample is 1498.78. This is not statistically significantly different from the population mean of 1500.
 
-<img src = "https://github.com/AaronAKTX/MechaCar_Statistical_Analysis/blob/main/resources/t.test-all.PNG"><br />
+<img src = "https://github.com/AaronAKTX/MechaCar_Statistical_Analysis/blob/main/resources/t.test_all.PNG"><br />
 
+Looking at the individual lots, you can see that lot 3 has a p-Value of .04168 and is statistically different from the population mean.
+
+Lot 1: <br />
+<img src = "https://github.com/AaronAKTX/MechaCar_Statistical_Analysis/blob/main/resources/t.test_lot1.PNG"> <br />
+Lot 2:<br />
+<img src = "https://github.com/AaronAKTX/MechaCar_Statistical_Analysis/blob/main/resources/t.test_lot2.PNG"> <br />
+Lot 3:<br />
+<img src = "https://github.com/AaronAKTX/MechaCar_Statistical_Analysis/blob/main/resources/t.test_lot3.PNG"> <br />
+
+## Study Design: MechaCar vs Competition
+A study of the MechaCar versus the competitors could be set-up. The study would analzye the cost of the vehicle and how that relates to the city or highway fuel efficiency, horse power, maintenance cost, and safety rating. The study would set the cost as the dependent variable and the other variables as independant variables.
+The study could use a multiple linear regression to see how these independent variables affect the cost of the vehicle. Then compare these results with competitor's results to see how different factors effect cost for different manufacturers. There may be some useful information in there.
 
