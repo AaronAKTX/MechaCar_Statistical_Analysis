@@ -2,7 +2,7 @@
 
 ## Linear Regression to Predict MPG
 
-A linear regression analysis of the miles per gallon of different mechacar prototypes was completed. The variables tracked were vehicle length, weight, the spoiler angle, ground clearance, all-wheel drive. Here is the result summary of the linear regression model:
+A linear regression analysis of the miles per gallon of different mechacar prototypes was completed. The variables tracked were vehicle length, weight, the spoiler angle, ground clearance, and all-wheel drive. Here is the result summary of the linear regression model:
 <img src = "https://github.com/AaronAKTX/MechaCar_Statistical_Analysis/blob/main/resources/MechaCar_MPG_Summary.PNG">
 
 Looking at these results, vehicle length and ground clearance appear to affect the miles per gallon to a statistically significant degree.
