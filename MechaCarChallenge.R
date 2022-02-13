@@ -1,6 +1,8 @@
 library(jsonlite)
 library(tidyverse)
 
+#Deliverable 1
+
 #3 Use the library() function to load the dplyr package.
 library(dplyr)
 
@@ -14,3 +16,34 @@ lm(mpg~vehicle_length + vehicle_weight + spoiler_angle + ground_clearance +  AWD
 
 #6 Using the summary() function, determine the p-value and the r-squared value for the linear regression model.
 summary(lm(mpg~vehicle_length + vehicle_weight + spoiler_angle + ground_clearance +  AWD, data=mechacar_mpg))
+
+#deliverable 2
+
+#2 In your MechaCarChallenge.RScript, import and read in the Suspension_Coil.csv file as a table.
+suspension_coils <- read.csv('resources/Suspension_Coil.csv',check.names = F,stringsAsFactors = F) #read in dataset
+head(suspension_coils)
+
+#3 Write an RScript that creates a total_summary dataframe using the summarize() function to get the 
+#mean, median, variance, and standard deviation of the suspension coil's PSI column.
+total_summary <-  suspension_coils %>% summarize(mean_psi=mean(PSI),median_psi=median(PSI),variance_psi=var(PSI),standard_deviation_psi = sd(PSI) , .groups = NULL) #create summary table with multiple columns
+
+
+#4 Write an RScript that creates a lot_summary dataframe using the group_by() and the summarize() functions 
+# to group each manufacturing lot by the mean, median, variance, and standard deviation of the suspension coil's 
+# PSI column.
+lot_summary <-  suspension_coils %>% group_by(Manufacturing_Lot) %>% summarize(mean_psi=mean(PSI),median_psi=median(PSI),variance_psi=var(PSI),standard_deviation_psi = sd(PSI) , .groups = 'keep') #create summary table with multiple columns
+
+# deliverable 3
+
+# 1. In your MechaCarChallenge.RScript, write an RScript using the t.test() function to determine if the PSI across 
+# all manufacturing lots is statistically different from the population mean of 1,500 pounds per square inch.
+
+t.test(suspension_coils$PSI,mu=1500) #compare sample versus population means
+
+# 2. Next, write three more RScripts in your MechaCarChallenge.RScript using the t.test() function and its subset() 
+# argument to determine if the PSI for each manufacturing lot is statistically different from the population mean of 
+# 1,500 pounds per square inch.
+
+t.test(subset(suspension_coils, Manufacturing_Lot=="Lot1")$PSI, mu=1500)
+t.test(subset(suspension_coils, Manufacturing_Lot=="Lot2")$PSI, mu=1500)
+t.test(subset(suspension_coils, Manufacturing_Lot=="Lot3")$PSI, mu=1500)
