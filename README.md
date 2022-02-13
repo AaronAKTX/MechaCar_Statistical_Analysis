@@ -17,51 +17,33 @@ I think it does a pretty good job of predicting mpg of MechaCar prototypes. The 
 
 ## Summary Statistics on Suspension Coils
 
-###The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not
-Here are pictures of the total summary and lot summary dataframes:
-<img src = "https://github.com/AaronAKTX/MechaCar_Statistical_Analysis/blob/main/resources/total_summary.PNG">
-<img src = "https://github.com/AaronAKTX/MechaCar_Statistical_Analysis/blob/main/resources/lot_summary.PNG">
+The t-test results of all the lots and each individual lots show that lot 3 is statisically significantly different from the population. If we take the results from all the lots together, they are close enough to the population mean to not be statistically significant, but individually, lot 1, and lot 2 are fine but lot 3 has too much variance.
+
+All lots: <br />
+<img src = https://github.com/AaronAKTX/MechaCar_Statistical_Analysis/blob/main/resources/t.test_all.PNG>
+<br />
+Lot 1:<br />
+<img src = https://github.com/AaronAKTX/MechaCar_Statistical_Analysis/blob/main/resources/t.test_lot1.PNG>
+<br />
+Lot 2:<br />
+<img src = https://github.com/AaronAKTX/MechaCar_Statistical_Analysis/blob/main/resources/t.test_lot2.PNG>
+<br />
+Lot 3:<br />
+<img src = https://github.com/AaronAKTX/MechaCar_Statistical_Analysis/blob/main/resources/t.test_lot3.PNG>
+<br />
+### The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not 
+<br />
+Here are pictures of the total summary and lot summary dataframes:<br />
+<img src = "https://github.com/AaronAKTX/MechaCar_Statistical_Analysis/blob/main/resources/total_summary.PNG"><br />
+<img src = "https://github.com/AaronAKTX/MechaCar_Statistical_Analysis/blob/main/resources/lot_summary.PNG"><br />
 
 From the dataframes above it's easy to see that the total variance in psi across all lots  is less than 63 pounds per square inch. Therefore, the desing specification is met for all lots. However, looking at the individual lots, Lot 3 has a variance of over 170 pounds per square inch. This specific lot does not meet the design specifications.
 
 ## T-Tests on Suspension Coils
 
 Comparing the population mean against the mean of the sample we have yields the following results.
-The mean of the psi in the three lots we have in our sample is 1498.78.
+The mean of the psi in the three lots we have in our sample is 1498.78. This is not statistically significantly different from the population mean of 1500.
 
-### A Tableau Story of the significant data points can be found here [Link to Story](https://public.tableau.com/app/profile/aaron.hall4277/viz/NYC_Citibike_Challenge_16439586683850/NYCCitiBikeBreakdown)
-
-### Results of Analysis:
-- Time per ride:
-<img src = "https://github.com/AaronAKTX/MechaCar_Statistical_Analysis/blob/main/resources/MechaCar_MPG_Summary.PNG">
-
-This shows that vast majority of the rides taken are than one hour.  People are usually just going for a quick ride to get from point A to point B.
+<img src = "https://github.com/AaronAKTX/MechaCar_Statistical_Analysis/blob/main/resources/t.test-all.PNG"><br />
 
 
-- Gender Checkout Times
-<img src = "https://github.com/AaronAKTX/bikesharing/blob/main/resources/gender_checkout_times.PNG">
-
-The Majority of Citibike riders are male. The average trip duration is consistent between males and females.
-
-- When are people riding?
-<img src = "https://github.com/AaronAKTX/bikesharing/blob/main/resources/Times_people_ride.PNG">
-
-People tend to ride most in the morning and in the evening.
-
-- What days are people riding?
-<img src = "https://github.com/AaronAKTX/bikesharing/blob/main/resources/Day_and_time_people_ride.PNG">
-
-The busiest day of the week is Thursday.
-
-- Is there a gender difference between when people ride?
-<img src = "https://github.com/AaronAKTX/bikesharing/blob/main/resources/Day_time_by_gender.PNG">
-
-Male and female riders have the same day/time riding habits.
-
-- What is the most common day to ride a Citibike?
-<img src = "https://github.com/AaronAKTX/bikesharing/blob/main/resources/most_common_day.PNG">
-
-More evidence that Thursday is the busiest day.
-
-### Citibike Summary
-In general we learned that there really isn't much of a gender discrepancy around days and time day people like to ride CitiBikes. The majority of the riders are male and the most common trip is 20 minutes or less. To further investigate we could which areas are the most common starting places of bikes rides. We could also see if those popular starting spots were consistent with regard to when people are riding from those spots. This would help ensure we had enough bikes in the right locations at the right times.
